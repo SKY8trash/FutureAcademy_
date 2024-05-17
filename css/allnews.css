@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --second-family: "Font Awesome 5 Brands", sans-serif;
+  --third-family: "Roboto", sans-serif;
+  --dark-blue: #00093c;
+  --orange: #f7941d;
+  --blue: #27aae1;
+}
+
+body {
+  max-width: 1920px;
+  margin-left: 370px;
+  margin-right: 370px;
+  background: #f6f7f9;
+}
+
+main {
+  font-family: var(--font-family);
+  margin-bottom: 100px;
+}
+main .homenews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 19px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #828282;
+  width: 135px;
+  height: 15px;
+}
+main .homenews li {
+  list-style: none;
+  margin-right: 8px;
+}
+main .homenews li:last-child {
+  margin-left: 10px;
+}
+main .newsfuture {
+  margin-top: 12px;
+}
+main .future {
+  font-weight: 700;
+  font-size: 36px;
+  color: #000;
+}
+main .newsheadline {
+  margin: 50px 0px 0px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+main .newsheadline_card {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+main .newsheadline__card__color {
+  width: 380px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+main .shadow:before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
+  background: linear-gradient(70deg, rgb(247, 148, 29), rgb(39, 170, 225) 100%);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+main .newsheadline_img img {
+  width: 380px;
+  height: 250px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+main .newsheadline_all {
+  margin-left: 30px;
+}
+main .newsheadline_date {
+  font-weight: 400;
+  font-size: 12px;
+  color: #000;
+  margin-top: 21px;
+}
+main .newsheadline_news {
+  margin-top: 21px;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--dark-blue);
+}
+main .newsheadline_info {
+  margin-top: 21px;
+  font-weight: 400;
+  font-size: 12px;
+  /* line-height: 150%; */
+  color: #4f4f4f;
+}
+main .newsheadline_btn {
+  margin-top: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main .newsheadline_btn a {
+  text-decoration: none;
+  color: #000;
+}
+main .newsheadline_btn_svg {
+  display: inline;
+}

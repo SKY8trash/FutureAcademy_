@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Font Awesome 5 Brands", sans-serif;
+    --third-family: "Roboto", sans-serif;
+    --dark-blue: #00093c;
+	--orange: #f7941d;
+	--blue: #27aae1;
+}
+body{
+    max-width: 1920px;
+    margin-left: 370px;
+    margin-right: 370px;
+    background: #f6f7f9;
+}
+main{
+    margin-bottom: 60px;
+    font-family: var(--font-family);
+    .homenews{
+        display: flex;
+        margin-top: 19px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #828282;
+        font-family: var(--font-family);
+        width: 135px;
+        height: 15px;
+
+        li{
+            list-style: none;
+            margin-right: 8px;
+        }
+
+        li:last-child{
+            margin-left: 10px;
+        }
+    }
+    .newsfuture{
+        margin-top: 12px;
+    }
+    .future{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    color: #000;
+    }
+    .newsheadline{
+        
+        }
+    .newsheadline_date {   
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #000;
+             
+        }
+    .newsheadline_info {     
+        margin-top: 15px;  
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 144%;
+        color: #000;
+        }
+        .news__img{
+           margin-top: 82px;
+           text-align: center;
+            img{
+                border-radius: 20px;
+                max-width: 780px;
+                width: 780px;
+                height: 436px;
+            }
+        }
+    .news__information__photo{
+        margin-top: 81px;
+        
+        p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 144%;
+            color: #000;
+            margin-top: 20px;
+        }
+    }
+}
