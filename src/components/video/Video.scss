@@ -1,0 +1,59 @@
+.video {
+    position: relative;
+    margin: 220px auto 0;
+    &__images {
+        position: relative;
+        z-index: 2;
+        border-radius: 20px;
+        width: 780px;
+        margin: 0 auto;
+        img {
+            border-radius: 20px;
+            filter: brightness(35%);
+        }
+    }
+    &__button {
+        position: absolute;
+        background-color: #fff;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 98px;
+        height: 98px;
+        z-index: 4;
+        &_triangle {
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-38%, -50%);
+            }
+        }
+    }
+
+    &__other {
+        position: relative;
+        &-1 {
+            position: absolute;
+            margin-top: -65%;
+            left: -12%;
+        }
+        &-2 {
+            position: absolute;
+            margin-top: -21%;
+            left: -29%;
+            z-index: 2;
+        }
+        &-3 {
+            position: absolute;
+            margin-top: -62%;
+            right: -31%;
+        }
+        &-4 {
+            position: absolute;
+            margin-top: -19%;
+            right: -21%;
+        }
+    }
+}
