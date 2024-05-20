@@ -4,7 +4,7 @@ import Header from "../Header/Header.vue"
 </script>
 
 <template>
-  <div>
+  <div class="wrapper">
     <Header />
     <RouterView />
     <Footer />

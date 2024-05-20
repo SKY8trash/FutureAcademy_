@@ -1,6 +1,7 @@
 <script setup></script>
 
 <template>
+  <main class="main">
   <div class="bg">
     <div class="container">
       <div class="head">Настройки учетной записи</div>
@@ -111,8 +112,9 @@
       </div>
     </div>
   </div>
+</main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "Profile.scss";
 </style>
