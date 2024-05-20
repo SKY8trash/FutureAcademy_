@@ -1,7 +1,8 @@
 .bg {
   background-color: #ccc;
+  height: 100%;
 }
-.container {
+.profile {
   background-color: rgb(255, 255, 255);
   padding-top: 40px;
   display: flex;
@@ -9,7 +10,6 @@
   align-items: center;
   width: 1000px;
   margin: 0 auto;
-  padding-bottom: 20%;
   @media (max-width: 900px) {
     width: 100%;
   }
@@ -22,6 +22,7 @@
     text-align: left;
     margin-top: 15px;
     @media (max-width: 900px) {
+      margin-left: 20px;
       font-size: 16pt;
     }
   }
@@ -50,6 +51,11 @@
   background-color: white;
   font-size: 16px;
 }
+.messageLanguageText {
+  @media (max-width: 900px) {
+    margin-left: 20px;
+  }
+}
 .btn {
   display: flex;
   align-items: center;
@@ -69,7 +75,12 @@
   height: 30px;
 }
 .courseInfo {
+  padding-top: 80px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  & > a {
+    color: #587ee7;
+  }
 }
