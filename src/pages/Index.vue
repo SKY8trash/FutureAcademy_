@@ -1,9 +1,7 @@
 <script setup lang="ts">
-// import ItemButton from "@/components/itemButton/ItemButton.vue"
+import Index from "@/components/index/Index.vue"
 </script>
 
 <template>
-  <!-- <div>главная страница</div> -->
-  <!-- <List /> -->
-  <ItemButton />
+  <Index />
 </template>

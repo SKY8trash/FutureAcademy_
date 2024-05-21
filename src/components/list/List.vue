@@ -133,7 +133,7 @@
   </div>
 </template>
 <script >
-// import "./List.js"
+// import "List.js"
 </script>
 
 <style lang="scss" scoped>
