@@ -1,5 +1,5 @@
 <template>
-  <a href="">
+  <a href="/course">
     <div class="card">
       <div class="cardH">Программа</div>
       <div class="cardHeader">
