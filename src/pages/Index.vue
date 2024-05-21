@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import Index from "@/components/index/Index.vue"
 </script>
 

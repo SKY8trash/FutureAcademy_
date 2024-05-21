@@ -19,6 +19,7 @@ export default {
     course: {
       type: Object,
       required: true,
+      discount: false,
     },
   },
 }
