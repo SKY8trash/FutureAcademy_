@@ -1,8 +1,9 @@
 <script setup lang="ts">
-// import List from "@/components/list/List.vue"
+// import ItemButton from "@/components/itemButton/ItemButton.vue"
 </script>
 
 <template>
-  <div>главная страница</div>
+  <!-- <div>главная страница</div> -->
   <!-- <List /> -->
+  <ItemButton />
 </template>
