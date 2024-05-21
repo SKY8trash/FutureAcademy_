@@ -1,6 +1,7 @@
 import Profile from "../pages/Profile.vue"
 import Index from "../pages/Index.vue"
 import AllCourses from "../pages/AllCourses.vue"
+import Course from "@/pages/Course.vue"
 
 export const routes = [
   {
@@ -14,5 +15,9 @@ export const routes = [
   {
     path: "/allCourses",
     component: AllCourses,
+  },
+  {
+    path: "/course",
+    component: Course,
   },
 ]

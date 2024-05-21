@@ -1,0 +1,25 @@
+.owl {
+  display: flex;
+
+  &Owl {
+    position: absolute;
+    top: 40%;
+    left: 17%;
+  }
+  &Text > img {
+    position: relative;
+  }
+  &Info {
+    margin-left: 80px;
+    width: 350px;
+  }
+}
+.text {
+  position: absolute;
+  width: 300px;
+  top: 35%;
+  left: 30%;
+  transform: translate(-57%, -61%);
+  font-weight: 600;
+  font-size: 16px;
+}
