@@ -1,5 +1,5 @@
 <template>
-  <a href="/course">
+  <a href="/course" @click="Toggle(Event), (lead = data)">
     <div class="card">
       <div class="cardH">Программа</div>
       <div class="cardHeader">

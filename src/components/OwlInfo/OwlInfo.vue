@@ -2,14 +2,11 @@
   <div class="owl">
     <div>
       <div class="owlText">
-        <img src="../../../public/Union-2.png" alt="" />
+        <img src="../../../public/sova.png" alt="" />
         <div class="text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora,
           fugiat maiores explicabo nemo eaque obcaecati sit corrupti in vitae
         </div>
-      </div>
-      <div class="owlOwl">
-        <img src="../../../public/owl.png" alt="" />
       </div>
     </div>
     <div class="owlInfo">

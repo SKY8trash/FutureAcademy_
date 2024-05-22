@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import Employment from "@/components/employment/Employment.vue"
 </script>
 

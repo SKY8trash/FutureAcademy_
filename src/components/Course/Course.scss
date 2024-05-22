@@ -1,0 +1,146 @@
+.course {
+  &Header {
+    background-color: #302669;
+    margin-bottom: 50px;
+  }
+  &HeaderSub {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  }
+  &HeaderInfo {
+    margin-top: 40px;
+  }
+  &Head {
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+  }
+  &SubHead {
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+  }
+  &Time {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    margin-right: 20px;
+  }
+  &Mode {
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+  }
+  &Price {
+    font-weight: 700;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  &Join {
+    font-weight: 700;
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &SubInfo {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  &Button {
+    & > button {
+      background-color: rgb(247, 148, 29);
+      color: #fff;
+      padding: 12px 20px;
+      width: auto;
+
+      // display: inline-block;
+      border: none;
+      outline: none;
+      border-radius: 6px;
+      &:hover {
+        background-color: rgb(236, 176, 101);
+        cursor: pointer;
+      }
+    }
+  }
+  &Info {
+    margin-bottom: 20px;
+    &Head {
+      font-weight: 700;
+      font-size: 20px;
+    }
+  }
+
+  &Learn {
+    font-weight: 700;
+    font-size: 20px;
+
+    &Info {
+      margin-top: 10px;
+      display: flex;
+      width: 25%;
+      height: 60%;
+      margin-bottom: 50px;
+    }
+  }
+  &S {
+    &Head {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    &Text {
+      margin-top: 20px;
+    }
+    &SubInfo {
+      margin-top: 20px;
+      display: flex;
+      margin-bottom: 10px;
+    }
+    &Time {
+      font-weight: 500;
+      font-size: 14px;
+      margin-right: 20px;
+    }
+    &Mode {
+      font-weight: 500;
+      font-size: 14px;
+    }
+    &Button {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      & > button {
+        background-color: rgb(247, 148, 29);
+        color: #fff;
+        padding: 12px 20px;
+        width: auto;
+
+        // display: inline-block;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        &:hover {
+          background-color: rgb(236, 176, 101);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.video {
+  margin-bottom: 100px;
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+.img {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}

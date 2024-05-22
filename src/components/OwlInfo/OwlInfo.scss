@@ -1,12 +1,12 @@
 .owl {
   display: flex;
-
-  &Owl {
-    position: absolute;
-    top: 40%;
-    left: 17%;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
   }
-  &Text > img {
+
+  &Text {
     position: relative;
   }
   &Info {
@@ -16,10 +16,6 @@
 }
 .text {
   position: absolute;
-  width: 300px;
-  top: 35%;
-  left: 30%;
-  transform: translate(-57%, -61%);
-  font-weight: 600;
-  font-size: 16px;
+  top: 10px;
+  left: 60px;
 }
