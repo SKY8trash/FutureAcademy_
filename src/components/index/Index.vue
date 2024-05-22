@@ -1,7 +1,26 @@
-<script setup lang="ts">
+<script setup >
 import OwlShape from "../owlShape/OwlShape.vue"
 import ItemButton from "../itemButton/ItemButton.vue"
 import Video from "../video/Video.vue"
+
+class ItemBtm {
+  itemBtn
+
+  constructor(itemBtn) {
+    this.itemBtn = itemBtn
+  }
+}
+const item = [
+  new ItemBtm("Робототехника"),
+  new ItemBtm("Создание игр"),
+  new ItemBtm("Web-разработка"),
+  new ItemBtm("Мультимедиа"),
+  new ItemBtm("Шахматы"),
+  new ItemBtm("3D-моделирование и дизайн"),
+  new ItemBtm("Английский язык"),
+  new ItemBtm("Блогинг"),
+  new ItemBtm("Soft skills"),
+]
 </script>
 
 <template>
@@ -114,69 +133,11 @@ import Video from "../video/Video.vue"
                 </div>
               </div>
               <div class="block">
-                <ItemButton />
-                <ItemButton />
-                <ItemButton />
-                <ItemButton />
-                <ItemButton />
-                <ItemButton />
-                <ItemButton />
-                <ItemButton />
-
-                <!-- <a href="">
-                  <div class="courses__items_item">
-                    Робототехника
-                    <div class="shadow">Робототехника</div>
-                  </div>
-                </a>
-                <a href="">
-                  <div class="courses__items_item">
-                    Создание игр
-                    <div class="shadow">Создание игр</div>
-                  </div>
-                </a>
-                <a href="">
-                  <div class="courses__items_item">
-                    Web-разработка
-                    <div class="shadow">Web-разработка</div>
-                  </div>
-                </a>
-                <a href="">
-                  <div class="courses__items_item">
-                    Мультимедиа
-                    <div class="shadow">Мультимедиа</div>
-                  </div>
-                </a>
-                <a href="">
-                  <div class="courses__items_item">
-                    Шахматы
-                    <div class="shadow">Шахматы</div>
-                  </div>
-                </a>
-                <a href="">
-                  <div class="courses__items_item">
-                    3D-моделирование и дизайн
-                    <div class="shadow">3D-моделирование и дизайн</div>
-                  </div>
-                </a>
-                <a href="">
-                  <div class="courses__items_item">
-                    Английский язык
-                    <div class="shadow">Английский язык</div>
-                  </div>
-                </a>
-                <a href="">
-                  <div class="courses__items_item">
-                    Блогинг
-                    <div class="shadow">Блогинг</div>
-                  </div>
-                </a> -->
-                <!-- <a href="">
-                  <div class="courses__items_item">
-                    Soft skills
-                    <div class="shadow">Soft skills</div>
-                  </div>
-                </a> -->
+                <ItemButton
+                  v-for="(el, index) in item"
+                  :key="index"
+                  :itembtn="el"
+                />
               </div>
             </div>
           </div>
@@ -243,10 +204,7 @@ import Video from "../video/Video.vue"
             <div class="information__cards-wrapper">
               <div class="information__cards__news">
                 <div class="information__cards__news_images">
-                  <img
-                    src="../../../public/newspaper.png"
-                    alt=""
-                  />
+                  <img src="../../../public/newspaper.png" alt="" />
                 </div>
                 <div class="information__cards__news_title">
                   Новости Академии
@@ -254,10 +212,7 @@ import Video from "../video/Video.vue"
               </div>
               <div class="information__cards__it">
                 <div class="information__cards__it_images">
-                  <img
-                    src="../../../public/diagram.png    "
-                    alt=""
-                  />
+                  <img src="../../../public/diagram.png    " alt="" />
                 </div>
                 <div class="information__cards__it_title">Мир IT</div>
               </div>
@@ -322,7 +277,17 @@ import Video from "../video/Video.vue"
 
   <OwlShape />
 </template>
-
+<script>
+export default {
+  components: { ItemButton },
+  data() {
+    return {
+      itembtn: [],
+      itemBtn: "",
+    }
+  },
+}
+</script>
   
   <style lang="scss" scoped>
 @import "Index.scss";

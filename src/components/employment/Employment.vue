@@ -1,9 +1,38 @@
 
 
-<script setup lang="ts">
-// import OwlShape from "../owlShape/OwlShape.vue"
-// import ItemButton from "../itemButton/ItemButton.vue"
-// import Video from "../video/Video.vue"
+<script setup>
+import Video from "../video/Video.vue"
+import OwlShape from "../owlShape/OwlShape.vue"
+import List from "../list/List.vue"
+
+import { ref } from "vue"
+
+const teachers = ref([
+  {
+    images: "../../../public/teachers_4.png",
+    name: "Kirill",
+    description:
+      "Выпускница Гарвардского Университета. Более 10 лет играет в шахматы и участвует в турнирах.",
+  },
+  {
+    images: "../../../public/teachers_3.png",
+    name: "Kirill",
+    description:
+      "Выпускница Гарвардского Университета. Более 10 лет играет в шахматы и участвует в турнирах.",
+  },
+  {
+    images: "../../../public/teachers_2.png",
+    name: "Kirill",
+    description:
+      "Выпускница Гарвардского Университета. Более 10 лет играет в шахматы и участвует в турнирах.",
+  },
+  {
+    images: "../../../public/teachers_1.png",
+    name: "Kirill",
+    description:
+      "Выпускница Гарвардского Университета. Более 10 лет играет в шахматы и участвует в турнирах.",
+  },
+])
 </script>
 
 <template>
@@ -51,37 +80,37 @@
               </button>
             </div>
             <div class="developer__images">
-              <img src="./assets/images/employ/block1/1.jpeg" alt="" />
+              <img src="../../../public/emp.jpeg" alt="" />
             </div>
 
             <div class="developer__other">
               <div class="developer__other-1">
-                <img src="./assets/images/employ/shapes/cross.png" alt="" />
+                <img src="../../../public/cross.png" alt="" />
               </div>
               <div class="developer__other-2">
-                <img src="./assets/images/employ/shapes/cross.png" alt="" />
+                <img src="../../../public/cross.png" alt="" />
               </div>
               <div class="developer__other-3">
-                <img src="./assets/images/employ/shapes/triangle.png" alt="" />
+                <img src="../../../public/triangle.png" alt="" />
               </div>
               <div class="developer__other-4">
-                <img src="./assets/images/employ/shapes/triangle.png" alt="" />
+                <img src="../../../public/triangle.png" alt="" />
               </div>
               <div class="developer__other-5">
-                <img src="./assets/images/employ/shapes/circle.png" alt="" />
+                <img src="../../../public/circle.png" alt="" />
               </div>
               <div class="developer__other-6">
-                <img src="./assets/images/employ/shapes/curved_1.png" alt="" />
+                <img src="../../../public/curved_1.png" alt="" />
               </div>
               <div class="developer__other-7">
-                <img src="./assets/images/employ/shapes/curved_6.png" alt="" />
+                <img src="../../../public/curved_6.png" alt="" />
               </div>
               <div class="developer__other-8">
-                <img src="./assets/images/employ/shapes/curved_5.png" alt="" />
+                <img src=".../../../public/curved_5.1.png" alt="" />
               </div>
-              <div class="developer__other-9">
-                <img src="./assets/images/employ/shapes/curved_3.png" alt="" />
-              </div>
+              <!-- <div class="developer__other-9">
+                <img src="../../../public/curved_3.png" alt="" />
+              </div> -->
             </div>
           </div>
         </div>
@@ -91,7 +120,7 @@
           <div class="profession__wrapper">
             <div class="profession__message">
               <div class="profession__message_description">
-                <img src="./assets/images/union/union_2.png" alt="" />
+                <img src="../../../public/union_2.png" alt="" />
                 <div>
                   <p>
                     Получите востребованную профессию и возможность открыть
@@ -101,13 +130,13 @@
               </div>
             </div>
             <div class="profession__message_owl">
-              <img src="./assets/images/index/block2/owl.png" alt="" />
+              <img src="../../../public/owl.png" alt="" />
             </div>
 
             <div class="profession__cards">
               <div class="vprofession__cards__card">
                 <div class="vprofession__cards__card_images">
-                  <img src="./assets/images/employ/block2/1.png" alt="" />
+                  <img src="../../../public/v_1.png" alt="" />
                 </div>
                 <div class="profession__cards__card_title">Заголовок</div>
                 <div class="profession__cards__card_description">
@@ -118,7 +147,7 @@
               </div>
               <div class="vprofession__cards__card">
                 <div class="vprofession__cards__card_images">
-                  <img src="./assets/images/employ/block2/3.png" alt="" />
+                  <img src="../../../public/v_3.png" alt="" />
                 </div>
                 <div class="profession__cards__card_title">Заголовок</div>
                 <div class="profession__cards__card_description">
@@ -129,7 +158,7 @@
               </div>
               <div class="profession__cards__card">
                 <div class="profession__cards__card_images">
-                  <img src="./assets/images/employ/block2/2.png" alt="" />
+                  <img src="../../../public/v_2.png" alt="" />
                 </div>
                 <div class="profession__cards__card_title">Заголовок</div>
                 <div class="profession__cards__card_description">
@@ -142,33 +171,8 @@
           </div>
         </div>
       </div>
-      <div class="video">
-        <div class="container">
-          <div class="video__images">
-            <img src="./assets/images/employ/block3/1.jpeg" alt="" />
-          </div>
-          <div class="video__button">
-            <div class="video__button_triangle">
-              <img src="./assets/images/index/block3/launch.png" alt="" />
-            </div>
-          </div>
+      <Video />
 
-          <div class="video__other">
-            <div class="video__other-1">
-              <img src="./assets/images/employ/shapes/1.4.png" alt="" />
-            </div>
-            <div class="video__other-2">
-              <img src="./assets/images/employ/shapes/curved_2.png" alt="" />
-            </div>
-            <div class="video__other-3">
-              <img src="./assets/images/employ/shapes/1.2.png" alt="" />
-            </div>
-            <div class="video__other-4">
-              <img src="./assets/images/employ/shapes/1.3.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="about">
         <div class="container">
           <div class="about__wrapper">
@@ -191,7 +195,7 @@
               <div class="about__learn__cards">
                 <div class="about__learn__cards__goals">
                   <div class="about__learn__cards__goals_images">
-                    <img src="./assets/images/employ/block5/3.png" alt="" />
+                    <img src="../../../public/a_3.png" alt="" />
                   </div>
                   <div class="about__learn__cards__goals_description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -199,7 +203,7 @@
                 </div>
                 <div class="about__learn__cards__goals">
                   <div class="about__learn__cards__goals_images">
-                    <img src="./assets/images/employ/block5/3.png" alt="" />
+                    <img src="../../../public/a_3.png" alt="" />
                   </div>
                   <div class="about__learn__cards__goals_description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -207,7 +211,7 @@
                 </div>
                 <div class="about__learn__cards__goals">
                   <div class="about__learn__cards__goals_images">
-                    <img src="./assets/images/employ/block5/3.png" alt="" />
+                    <img src="../../../public/a_3.png" alt="" />
                   </div>
                   <div class="about__learn__cards__goals_description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -215,7 +219,7 @@
                 </div>
                 <div class="about__learn__cards__goals">
                   <div class="about__learn__cards__goals_images">
-                    <img src="./assets/images/employ/block5/3.png" alt="" />
+                    <img src="../../../public/a_3.png" alt="" />
                   </div>
                   <div class="about__learn__cards__goals_description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -223,7 +227,7 @@
                 </div>
                 <div class="about__learn__cards__goals">
                   <div class="about__learn__cards__goals_images">
-                    <img src="./assets/images/employ/block5/3.png" alt="" />
+                    <img src="../../../public/a_3.png" alt="" />
                   </div>
                   <div class="about__learn__cards__goals_description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -231,7 +235,7 @@
                 </div>
                 <div class="about__learn__cards__goals">
                   <div class="about__learn__cards__goals_images">
-                    <img src="./assets/images/employ/block5/3.png" alt="" />
+                    <img src="../../../public/a_3.png" alt="" />
                   </div>
                   <div class="about__learn__cards__goals_description">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -286,7 +290,7 @@
           <div class="academy__cards">
             <div class="academy__cards__services">
               <div class="academy__cards__services_images">
-                <img src="./assets/images/index/block6/gears.png" alt="" />
+                <img src="../../../public/gears.png" alt="" />
               </div>
               <div class="academy__cards__services_discription">
                 Передовой подход к образовательному процессу
@@ -294,7 +298,7 @@
             </div>
             <div class="academy__cards__services">
               <div class="academy__cards__services_images">
-                <img src="./assets/images/index/block6/book.png" alt="" />
+                <img src="../../../public/book.png" alt="" />
               </div>
               <div class="academy__cards__services_discription">
                 Непрерывное усовершенствование и пополнение базы курсов
@@ -302,7 +306,7 @@
             </div>
             <div class="academy__cards__services">
               <div class="academy__cards__services_images">
-                <img src="./assets/images/index/block6/board.png" alt="" />
+                <img src=".../../../public/board.png" alt="" />
               </div>
               <div class="academy__cards__services_discription">
                 Только практикующие преподаватели
@@ -310,7 +314,7 @@
             </div>
             <div class="academy__cards__services">
               <div class="academy__cards__services_images">
-                <img src="./assets/images/index/block6/human.png" alt="" />
+                <img src="../../../public/human.png" alt="" />
               </div>
               <div class="academy__cards__services_discription">
                 Сопровождение на всех этапах. От начала обучения до
@@ -421,20 +425,20 @@
               <div class="course-content__information_message">
                 <div>1 занятие бесплатное</div>
                 <div>
-                  <img src="./assets/images/union/union_1.png" alt="" />
-                  <img src="./assets/images/index/block2/owl.png" alt="" />
+                  <img src="../../../public/union_1.png" alt="" />
+                  <img src="../../../public/owl.png" alt="" />
                 </div>
               </div>
             </div>
             <div class="course-content__other">
               <div class="course-content__other-1">
-                <img src="./assets/images/employ/shapes/cross.png" alt="" />
+                <img src="../../../public/cross.png" alt="" />
               </div>
               <div class="course-content__other-2">
-                <img src="./assets/images/employ/shapes/triangle.png" alt="" />
+                <img src="../../../public/triangle.png" alt="" />
               </div>
               <div class="course-content__other-3">
-                <img src="./assets/images/employ/shapes/circle.png" alt="" />
+                <img src="../../../public/circle.png" alt="" />
               </div>
             </div>
           </div>
@@ -444,66 +448,51 @@
         <div class="container">
           <div class="teachers__wrapper">
             <div class="teachers_title">Наши преподаватели</div>
+
             <div class="teachers__cards">
-              <div class="teachers__cards__block">
-                <div class="teachers__cards__block_images">
-                  <img src="./assets/images/employ/block4/4.png" alt="" />
+              <div
+                class="teachers__cards__block"
+                v-for="value in teachers"
+                :key="value.id"
+              >
+                <div
+                  class="teachers__cards__block_images"
+                  id="images"
+                  name="images"
+                >
+                  <img :src="value.images" alt="" />
                 </div>
-                <div class="teachers__cards__block_title">Имя Фамилия</div>
-                <div class="teachers__cards__block_description">
-                  Выпускница Гарвардского Университета. Более 10 лет играет в
-                  шахматы и участвует в турнирах.
+                <div class="teachers__cards__block_title" id="name" name="name">
+                  {{ value.name }}
                 </div>
-              </div>
-              <div class="teachers__cards__block">
-                <div class="teachers__cards__block_images">
-                  <img src="./assets/images/employ/block4/3.png" alt="" />
-                </div>
-                <div class="teachers__cards__block_title">Имя Фамилия</div>
-                <div class="teachers__cards__block_description">
-                  Выпускница Гарвардского Университета. Более 10 лет играет в
-                  шахматы и участвует в турнирах.
-                </div>
-              </div>
-              <div class="teachers__cards__block">
-                <div class="teachers__cards__block_images">
-                  <img src="./assets/images/employ/block4/2.png" alt="" />
-                </div>
-                <div class="teachers__cards__block_title">Имя Фамилия</div>
-                <div class="teachers__cards__block_description">
-                  Выпускница Гарвардского Университета. Более 10 лет играет в
-                  шахматы и участвует в турнирах.
-                </div>
-              </div>
-              <div class="teachers__cards__block">
-                <div class="teachers__cards__block_images">
-                  <img src="./assets/images/employ/block4/1.png" alt="" />
-                </div>
-                <div class="teachers__cards__block_title">Имя Фамилия</div>
-                <div class="teachers__cards__block_description">
-                  Выпускница Гарвардского Университета. Более 10 лет играет в
-                  шахматы и участвует в турнирах.
+                <div
+                  class="teachers__cards__block_description"
+                  id="description"
+                  name="description"
+                >
+                  {{ value.description }}
                 </div>
               </div>
             </div>
+
             <div class="teachers_dot">
-              <img src="./assets/images/employ/block4/b.png" alt="" />
+              <img src="../../../public/b.png" alt="" />
             </div>
             <div class="teachers__other">
               <div class="teachers__other-1">
-                <img src="./assets/images/employ/shapes/curved_2.png" alt="" />
+                <img src="../../../public/curved_2.1.png" alt="" />
               </div>
               <div class="teachers__other-2">
-                <img src="./assets/images/employ/shapes/cross.png" alt="" />
+                <img src="../../../public/cross.png" alt="" />
               </div>
               <div class="teachers__other-3">
-                <img src="./assets/images/employ/shapes/triangle.png" alt="" />
+                <img src="../../../public/triangle.png" alt="" />
               </div>
               <div class="teachers__other-4">
-                <img src="./assets/images/employ/shapes/circle.png" alt="" />
+                <img src="../../../public/circle.png" alt="" />
               </div>
               <div class="teachers__other-5">
-                <img src="./assets/images/employ/shapes/curved_1.png" alt="" />
+                <img src="../../../public/curved_1.png" alt="" />
               </div>
             </div>
           </div>
@@ -559,7 +548,7 @@
               <div class="summary__card__who">
                 <div class="summary__card__who__images">
                   <div class="summary__card__who__images_img">
-                    <img src="./assets/images/employ/block5/1.png" alt="" />
+                    <img src="../../../public/a_1.png" alt="" />
                   </div>
                   <div class="summary__card__who__images_speciality">
                     Должность:
@@ -578,37 +567,37 @@
                 </div>
                 <div class="summary__card__skills__card">
                   <div class="summary__card__skills__card__name">
-                    <img src="./assets/images/employ/block5/3.png" alt="" />
+                    <img src="../../../public/a_3.png" alt="" />
                     <div class="summary__card__skills__card__name_title">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </div>
                   </div>
                   <div class="summary__card__skills__card__name">
-                    <img src="./assets/images/employ/block5/3.png" alt="" />
+                    <img src="../../../public/a_3.png" alt="" />
                     <div class="summary__card__skills__card__name_title">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </div>
                   </div>
                   <div class="summary__card__skills__card__name">
-                    <img src="./assets/images/employ/block5/3.png" alt="" />
+                    <img src="../../../public/a_3.png" alt="" />
                     <div class="summary__card__skills__card__name_title">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </div>
                   </div>
                   <div class="summary__card__skills__card__name">
-                    <img src="./assets/images/employ/block5/3.png" alt="" />
+                    <img src="../../../public/a_3.png" alt="" />
                     <div class="summary__card__skills__card__name_title">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </div>
                   </div>
                   <div class="summary__card__skills__card__name">
-                    <img src="./assets/images/employ/block5/3.png" alt="" />
+                    <img src="../../../public/a_3.png" alt="" />
                     <div class="summary__card__skills__card__name_title">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </div>
                   </div>
                   <div class="summary__card__skills__card__name">
-                    <img src="./assets/images/employ/block5/3.png" alt="" />
+                    <img src="../../../public/a_3.png" alt="" />
                     <div class="summary__card__skills__card__name_title">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     </div>
@@ -618,7 +607,7 @@
               <hr />
               <div class="summary__card__diploma">
                 <div class="summary__card__diploma_shadow"></div>
-                <img src="./assets/images/employ/block5/2.png" alt="" />
+                <img src="../../../public/a_2.png" alt="" />
                 <div class="summary__card__diploma_title">
                   Диплом ХОД Future Academy
                   <p>
@@ -631,185 +620,12 @@
           </div>
         </div>
       </div>
-      <div class="answers">
-        <div class="container">
-          <div class="answers__wrapper">
-            <div class="answers_title">Найдите ответ на свой вопрос</div>
 
-            <div class="accordion">
-              <!-- <dl> -->
-              <div class="qwe">
-                <dt>
-                  <a
-                    href="#accordion1"
-                    aria-expanded="false"
-                    aria-controls="accordion1"
-                    class="accordion-title accordionTitle js-accordionTrigger"
-                    >У меня нет опыта в программировании. Подойдёт ли мне этот
-                    курс?</a
-                  >
-                </dt>
-                <dd
-                  class="accordion-content accordionItem is-collapsed"
-                  id="accordion1"
-                  aria-hidden="true"
-                >
-                  <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Etiam dignissim, neque sit amet aliquam cursus, ante urna
-                    porta mauris, eget venenatis risus turpis ac nisl. Aenean
-                    blandit, nulla tincidunt efficitur placerat, ante nisl
-                    auctor ipsum, in auctor mauris lacus sed nibh. Quisque id
-                    imperdiet metus, non semper dui. Phasellus pellentesque
-                    vitae leo in dapibus. Class aptent taciti sociosqu ad litora
-                    torquent per conubia nostra, per inceptos himenaeos.
-                    Suspendisse id aliquam nunc. Sed dignissim, nibh quis
-                    dapibus dapibus, ex sapien ultricies leo, sit amet placerat
-                    arcu sem id sem.
-                  </p>
-                </dd>
-              </div>
-              <div class="qwe">
-                <dt>
-                  <a
-                    href="#accordion1"
-                    aria-expanded="false"
-                    aria-controls="accordion1"
-                    class="accordion-title accordionTitle js-accordionTrigger"
-                    >Нужно ли знать математику?</a
-                  >
-                </dt>
-                <dd
-                  class="accordion-content accordionItem is-collapsed"
-                  id="accordion1"
-                  aria-hidden="true"
-                >
-                  <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Etiam dignissim, neque sit amet aliquam cursus, ante urna
-                    porta mauris, eget venenatis risus turpis ac nisl. Aenean
-                    blandit, nulla tincidunt efficitur placerat, ante nisl
-                    auctor ipsum, in auctor mauris lacus sed nibh. Quisque id
-                    imperdiet metus, non semper dui. Phasellus pellentesque
-                    vitae leo in dapibus. Class aptent taciti sociosqu ad litora
-                    torquent per conubia nostra, per inceptos himenaeos.
-                    Suspendisse id aliquam nunc. Sed dignissim, nibh quis
-                    dapibus dapibus, ex sapien ultricies leo, sit amet placerat
-                    arcu sem id sem.
-                  </p>
-                </dd>
-              </div>
-              <div class="qwe">
-                <dt>
-                  <a
-                    href="#accordion1"
-                    aria-expanded="false"
-                    aria-controls="accordion1"
-                    class="accordion-title accordionTitle js-accordionTrigger"
-                    >Сколько часов в неделю мне нужно будет уделять курсу?</a
-                  >
-                </dt>
-                <dd
-                  class="accordion-content accordionItem is-collapsed"
-                  id="accordion1"
-                  aria-hidden="true"
-                >
-                  <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Etiam dignissim, neque sit amet aliquam cursus, ante urna
-                    porta mauris, eget venenatis risus turpis ac nisl. Aenean
-                    blandit, nulla tincidunt efficitur placerat, ante nisl
-                    auctor ipsum, in auctor mauris lacus sed nibh. Quisque id
-                    imperdiet metus, non semper dui. Phasellus pellentesque
-                    vitae leo in dapibus. Class aptent taciti sociosqu ad litora
-                    torquent per conubia nostra, per inceptos himenaeos.
-                    Suspendisse id aliquam nunc. Sed dignissim, nibh quis
-                    dapibus dapibus, ex sapien ultricies leo, sit amet placerat
-                    arcu sem id sem.
-                  </p>
-                </dd>
-              </div>
-              <div class="qwe">
-                <dt>
-                  <a
-                    href="#accordion1"
-                    aria-expanded="false"
-                    aria-controls="accordion1"
-                    class="accordion-title accordionTitle js-accordionTrigger"
-                    >Кто будет помогать мне на курсе?</a
-                  >
-                </dt>
-                <dd
-                  class="accordion-content accordionItem is-collapsed"
-                  id="accordion1"
-                  aria-hidden="true"
-                >
-                  <p class="">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Etiam dignissim, neque sit amet aliquam cursus, ante urna
-                    porta mauris, eget venenatis risus turpis ac nisl. Aenean
-                    blandit, nulla tincidunt efficitur placerat, ante nisl
-                    auctor ipsum, in auctor mauris lacus sed nibh. Quisque id
-                    imperdiet metus, non semper dui. Phasellus pellentesque
-                    vitae leo in dapibus. Class aptent taciti sociosqu ad litora
-                    torquent per conubia nostra, per inceptos himenaeos.
-                    Suspendisse id aliquam nunc. Sed dignissim, nibh quis
-                    dapibus dapibus, ex sapien ultricies leo, sit amet placerat
-                    arcu sem id sem.
-                  </p>
-                </dd>
-              </div>
-
-              <!-- </dl> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="application">
-        <div class="application__wrapper">
-          <div class="application_owl">
-            <img src="./assets/images/index/block2/owl.png" alt="" />
-          </div>
-          <div class="application__message">
-            <div class="application__message_images">
-              <img src="./assets/images/index/block6/Union.png" alt="" />
-            </div>
-            <div class="application__message_description">
-              Помочь с выбором?
-
-              <p>
-                Оставьте заявку и наши специалисты свяжутся с вами, ответят на
-                все вопросы и подберут подходящий вариант обучения.
-              </p>
-            </div>
-          </div>
-          <div class="application__form">
-            <form action="">
-              <input type="text" placeholder="Ваше имя" />
-              <div>
-                <input type="text" placeholder="Ваш телефон" />
-                <input type="text" placeholder="Ваш e-mail" />
-              </div>
-              <div class="conf">
-                <p>
-                  Нажимая на кнопку, я соглашаюсь на обработку персональных
-                  данных и с правилами пользования Платформой
-                </p>
-                <input
-                  class="application__form_button"
-                  type="submit"
-                  value="Отправить"
-                />
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="application_shadow"></div>
-      </div>
+      <List />
     </div>
   </main>
+  <OwlShape />
 </template>
-  
 <style lang="scss" scoped>
 @import "Employment.scss";
 </style>

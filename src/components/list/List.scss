@@ -13,7 +13,7 @@
     border: 2px solid transparent;
     background:
         linear-gradient(#fff, #fff) padding-box,
-        var(--hardShadow) border-box;
+        linear-gradient(to right, #f7941d, #27aae1) border-box;
     margin-bottom: 10px;
 }
 .accordionTitle,

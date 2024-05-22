@@ -2,7 +2,7 @@
     &__wrapper {
     }
     .developer {
-        background-color: var(--background);
+        background-color: #00093c;
         color: #fff;
         &__wrapper {
             position: relative;
@@ -123,10 +123,11 @@
 
         hr {
             border: none;
-            background: var(--hardShadow);
-            height: 1px;
+            background: linear-gradient(to right, #f7941d, #27aae1);
+            height: 2px;
         }
     }
+
     .profession {
         margin-top: 100px;
         &__wrapper {
@@ -175,6 +176,7 @@
             }
         }
     }
+
     .about {
         margin-top: 68px;
         &__wrapper {
@@ -215,10 +217,11 @@
             }
         }
     }
+
     .will {
         margin-top: 50px;
         color: #fff;
-        background: var(--background);
+        background: #00093c;
         &__wrapper {
             padding: 24px 0 40px;
             text-align: center;
@@ -259,6 +262,7 @@
             background: rgb(247, 148, 29);
         }
     }
+
     .earnings {
         margin-top: 72px;
         &__wrapper {
@@ -309,6 +313,7 @@
             }
         }
     }
+
     .course-content {
         margin: 84px 0 72px;
         &__wrapper {
@@ -414,9 +419,10 @@
             }
         }
     }
+
     .teachers {
         position: relative;
-        background-color: var(--background);
+        background-color: #00093c;
         color: #fff;
         &__wrapper {
             position: relative;
@@ -431,10 +437,12 @@
             font-weight: 700;
         }
         &__cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             position: relative;
             text-align: center;
             z-index: 2;
-            display: flex;
             gap: 20px;
             color: #000;
             &__block {
@@ -456,7 +464,7 @@
                     border: 2px solid transparent;
                     background:
                         linear-gradient(#fff, #fff) padding-box,
-                        var(--hardShadow) border-box;
+                        linear-gradient(to right, #f7941d, #27aae1) border-box;
                     img {
                         position: absolute;
                         top: 5%;
@@ -514,6 +522,7 @@
             }
         }
     }
+
     .employment-creation {
         margin-top: 64px;
         &__wrapper {
@@ -574,7 +583,7 @@
             border: 2px solid transparent;
             background:
                 linear-gradient(#fff, #fff) padding-box,
-                var(--hardShadow) border-box;
+                linear-gradient(to right, #f7941d, #27aae1) border-box;
             &__who {
                 display: flex;
                 justify-content: space-between;
@@ -591,7 +600,7 @@
                         border: 2px solid transparent;
                         background:
                             linear-gradient(#fff, #fff) padding-box,
-                            var(--hardShadow) border-box;
+                            linear-gradient(to right, #f7941d, #27aae1) border-box;
                         img {
                             position: absolute;
                             top: 50%;
@@ -689,10 +698,32 @@
 
     hr {
         border: none;
-        background: var(--hardShadow);
+        background: linear-gradient(to right, #f7941d, #27aae1);
         height: 1.1px;
     }
-    employment
+
+    .academy {
+        margin-top: 85px;
+        &_title {
+            font-size: 36px;
+            font-weight: 700;
+        }
+        &__cards {
+            margin-top: 60px;
+            display: flex;
+            gap: 20px;
+            &__services {
+                width: 280px;
+                &_images {
+                }
+                &_discription {
+                    margin-top: 20px;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
     // ------------- Начало
     .answers {
         margin-top: 88px;
@@ -709,7 +740,7 @@
         border: 2px solid transparent;
         background:
             linear-gradient(#fff, #fff) padding-box,
-            var(--hardShadow) border-box;
+            linear-gradient(to right, #f7941d, #27aae1) border-box;
         margin-bottom: 10px;
     }
     .accordionTitle,
@@ -760,4 +791,5 @@
         max-height: auto;
     }
     // ------------- Конец
+
 }

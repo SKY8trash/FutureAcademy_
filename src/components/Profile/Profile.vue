@@ -30,6 +30,7 @@ const arr = ref([
     name: "Danil",
     lastName: "legenda",
   },
+  
 ])
 function update(content, name) {
   switch (name) {
