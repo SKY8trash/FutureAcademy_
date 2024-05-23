@@ -24,6 +24,7 @@ export const routes = [
     component: Course,
   },
   {
+<<<<<<< Updated upstream
     path: "/register",
     component: Register,
   },
@@ -34,5 +35,9 @@ export const routes = [
   {
     path: "/employment",
     component: Employment,
+=======
+    path: "/Employment",
+    component: Course,
+>>>>>>> Stashed changes
   },
 ]
