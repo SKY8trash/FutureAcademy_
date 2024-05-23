@@ -2,6 +2,10 @@
 import OwlInfo from "../OwlInfo/OwlInfo.vue"
 import Video from "../video/Video.vue"
 import ProgramText from "../ProgramText/ProgramText.vue"
+import SalaryBlock from "../SalaryBlock/SalaryBlock.vue"
+import TeacherCard from "../TeacherCard/TeacherCard.vue"
+import WorkCard from "../WorkCard/WorkCard.vue"
+import Portfolio from "../Portfolio/Portfolio.vue"
 
 class Course {
   image
@@ -55,6 +59,7 @@ const courses = [
           <div class="img"><img src="../../../public/2.png" alt="" /></div>
         </div>
       </div>
+
       <div class="container">
         <div class="courseImg"></div>
       </div>
@@ -106,6 +111,60 @@ const courses = [
     </div>
     <ProgramText />
     <div class="container">
+      <div class="container">
+        <div class="coursePrHead">Принципы обучения</div>
+        <div class="coursePr">
+          <div class="coursePrBlock">
+            <div class="coursePrImg">
+              <img src="../../../public/gears.png" width="84px" />
+            </div>
+            <div class="coursePrText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              corrupti ad aliquam, consectetur aspernatur dolorem numquam
+              provident explicabo? Inventore fugiat dolore placeat possimus sunt
+              totam, accusamus eius sequi reprehenderit quaerat!
+            </div>
+          </div>
+          <div class="coursePrBlock">
+            <div class="coursePrImg">
+              <img src="../../../public/book.png" width="84px" />
+            </div>
+            <div class="coursePrText">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              aliquam corrupti ipsam ducimus excepturi commodi nostrum
+              voluptates, magnam magni earum nemo voluptas expedita possimus
+              iusto et unde laborum! Dignissimos, deleniti!
+            </div>
+          </div>
+          <div class="coursePrBlock">
+            <div class="coursePrImg">
+              <img src="../../../public/teacherIcon.png" width="104px" />
+            </div>
+            <div class="coursePrText">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+              soluta ducimus dolore magni itaque aspernatur excepturi fugiat,
+              est delectus. Nostrum quo cupiditate molestiae alias totam odit
+              cumque voluptatum facere explicabo.
+            </div>
+          </div>
+          <div class="coursePrBlock">
+            <div class="coursePrImg">
+              <img src="../../../public/human.png" width="60px" />
+            </div>
+            <div class="coursePrText">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore porro, aliquam, omnis soluta doloribus facilis ad
+              repudiandae assumenda ullam, neque tenetur laudantium libero sunt.
+              Quaerat dolorem maxime voluptates eveniet laborum!
+            </div>
+          </div>
+        </div>
+
+        <div class="salaryHead">Сколько зарабатывает</div>
+        <div class="salary">
+          <SalaryBlock />
+        </div>
+      </div>
       <div class="courseS">
         <div class="courseSHead">Содержание курса</div>
         <div class="courseSText">
@@ -123,6 +182,15 @@ const courses = [
         <div class="coursePrise">от 4350₽ в месяц</div>
         <div class="courseSButton"><button>Записаться на курс</button></div>
       </div>
+    </div>
+    <div class="TeacherCard">
+      <TeacherCard />
+    </div>
+    <div class="WorkCard">
+      <WorkCard />
+    </div>
+    <div class="Portfolio">
+      <Portfolio />
     </div>
   </div>
 </template>

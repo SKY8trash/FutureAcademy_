@@ -1,0 +1,76 @@
+.portfolio {
+  border: 1px solid orange;
+  border-radius: 15px;
+  width: 950px;
+  height: 700px;
+  margin: 20px auto;
+  &Head {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &Sub {
+      margin-left: 20px;
+      &Text {
+        font-size: 12px;
+      }
+    }
+    &Name {
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    &Salary {
+      margin-bottom: 10px;
+      margin-right: 20px;
+      &Sub {
+        font-size: 12px;
+      }
+      &Price {
+        font-weight: 600;
+        margin-top: 20px;
+      }
+    }
+    & &Img {
+      & > img {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  &Info {
+    margin-top: 40px;
+    margin-left: 20px;
+
+    &S {
+      width: 400px;
+      display: flex;
+      margin-top: 20px;
+      &Text {
+        margin-left: 5px;
+        margin-top: 5px;
+      }
+    }
+  }
+  &Bottom {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 30px;
+    &Info {
+      margin-top: 60px;
+      margin-left: 30px;
+    }
+    &Head {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    &Text {
+      margin-top: 20px;
+    }
+  }
+}
