@@ -1,8 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
 :root {
   --font-family: "Montserrat", sans-serif;
   --second-family: "Font Awesome 5 Brands", sans-serif;
@@ -11,26 +6,12 @@
   --orange: #f7941d;
   --blue: #27aae1;
 }
-// body {
-//   max-width: 1920px;
-//   margin-left: 370px;
-//   margin-right: 370px;
-//   background: #f6f7f9;
-// }
-// main {
-//   margin-bottom: 99px;
-//   font-family: var(--font-family);
-//   text-align: center;
-//   a {
-//     text-decoration: none;
-//   }
-// }
 
 .register__nav {
   margin-top: 94px;
   font-weight: 700;
   font-size: 16px;
-  /* text-align: center; */
+  text-align: center;
 
   a {
     color: #000;
@@ -46,6 +27,9 @@
   margin-top: 15px;
 }
 .register__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 50px;
 }
 .register__input__nav {
@@ -83,6 +67,10 @@
 }
 .register__btn {
   margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 .btn {
   border-radius: 6px;
