@@ -1,7 +1,15 @@
 <script setup>
 </script>
 
-<template></template>
+<template>
+
+<main class="main">
+    <div class="container">
+        
+    </div>
+</main>
+
+</template>
 
 <style>
 @import "AdminUsers.scss";

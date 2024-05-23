@@ -5,6 +5,7 @@ import Course from "@/pages/Course.vue"
 import Register from "@/pages/Register.vue"
 import Login from "@/pages/Login.vue"
 import Employment from "@/pages/Employment.vue"
+import AdminUsers from "@/pages/AdminUsers.vue"
 
 export const routes = [
   {
@@ -24,7 +25,6 @@ export const routes = [
     component: Course,
   },
   {
-<<<<<<< Updated upstream
     path: "/register",
     component: Register,
   },
@@ -33,11 +33,7 @@ export const routes = [
     component: Login,
   },
   {
-    path: "/employment",
-    component: Employment,
-=======
-    path: "/Employment",
-    component: Course,
->>>>>>> Stashed changes
+    path: "/AdminUsers",
+    component: AdminUsers,
   },
 ]
