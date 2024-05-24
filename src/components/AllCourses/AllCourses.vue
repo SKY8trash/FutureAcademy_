@@ -1,43 +1,6 @@
 <script setup>
-class Course {
-  image
-  cardHead
-  cardText
-  cardData
-
-  constructor(image, cardHead, cardText, cardData) {
-    this.image = image
-    this.cardHead = cardHead
-    this.cardText = cardText
-    this.cardData = cardData
-  }
-}
-const courses = [
-  new Course(
-    "../../../public/mobile.png",
-    "Разработка мобильных приложений",
-    "Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются на смартфонах, умных часах и планшетах.",
-    "24 мая"
-  ),
-  new Course("../../../public/mobile.png", "хыхы", "hahahahaha", "сегодня"),
-  new Course("../../../public/mobile.png", "хыхы", "hahahahaha", "сегодня"),
-  new Course(
-    "../../../public/mobile.png",
-    "хыхы",
-    "hahahahaha",
-    "сегодня",
-    true
-  ),
-  new Course("../../../public/mobile.png", "хыхы", "hahahahaha", "сегодня"),
-  new Course("../../../public/mobile.png", "хыхы", "hahahahaha", "сегодня"),
-  new Course(
-    "../../../public/mobile.png",
-    "хыхы",
-    "hahahahaha",
-    "сегодня",
-    true
-  ),
-]
+import { courses } from "../fakeData"
+console.log(courses)
 </script>
 
 <template>

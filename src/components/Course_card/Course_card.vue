@@ -1,5 +1,12 @@
+<script setup>
+// import { useRoute } from "vue-router"
+
+// const route = useRoute()
+import { courses } from "../fakeData"
+</script>
+
 <template>
-  <a href="/course" @click="Toggle(Event), (lead = data)">
+  <router-link :to="`/course/${course.id}`" id="course">
     <div class="card">
       <div class="cardH">Программа</div>
       <div class="cardHeader">
@@ -11,7 +18,7 @@
       </div>
       <div class="cardData">{{ course.cardData }}</div>
     </div>
-  </a>
+  </router-link>
 </template>
 <script>
 export default {

@@ -17,28 +17,30 @@
     </div>
     <div class="portfolioInfo">
       <div class="portfolioInfoSkill">Профессиональные навыки:</div>
-      <div class="portfolioInfoS">
-        <div class="portfolioInfoSImg">
-          <img src="../../../public/accept.png" alt="" />
+      <div class="portfolioInfoBlock">
+        <div class="portfolioInfoS">
+          <div class="portfolioInfoSImg">
+            <img src="../../../public/accept.png" alt="" />
+          </div>
+          <div class="portfolioInfoSText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </div>
         </div>
-        <div class="portfolioInfoSText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        <div class="portfolioInfoS">
+          <div class="portfolioInfoSImg">
+            <img src="../../../public/accept.png" alt="" />
+          </div>
+          <div class="portfolioInfoSText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </div>
         </div>
-      </div>
-      <div class="portfolioInfoS">
-        <div class="portfolioInfoSImg">
-          <img src="../../../public/accept.png" alt="" />
-        </div>
-        <div class="portfolioInfoSText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </div>
-      </div>
-      <div class="portfolioInfoS">
-        <div class="portfolioInfoSImg">
-          <img src="../../../public/accept.png" alt="" />
-        </div>
-        <div class="portfolioInfoSText">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        <div class="portfolioInfoS">
+          <div class="portfolioInfoSImg">
+            <img src="../../../public/accept.png" alt="" />
+          </div>
+          <div class="portfolioInfoSText">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </div>
         </div>
       </div>
     </div>

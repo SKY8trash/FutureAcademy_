@@ -12,11 +12,13 @@
   &HeaderInfo {
     margin-top: 40px;
     margin-right: 50px;
+    @media (max-width: 900px) {
+      margin: 20px;
+    }
   }
   &Head {
     margin-top: 40px;
     font-weight: 700;
-    font-size: 20px;
     color: #fff;
   }
   &SubHead {
@@ -75,6 +77,16 @@
 
   &Info {
     margin-bottom: 20px;
+    @media (max-width: 900px) {
+      margin: 20px;
+      width: 300px;
+    }
+    &Block {
+      width: 1000px;
+      @media (max-width: 900px) {
+        margin: 20px;
+      }
+    }
     &Head {
       font-weight: 700;
       font-size: 20px;
@@ -84,11 +96,17 @@
   &Learn {
     font-weight: 700;
     font-size: 20px;
-
+    &Accept {
+      display: flex;
+      flex-wrap: wrap;
+      @media (max-width: 900px) {
+        width: 380px;
+      }
+    }
     &Info {
       margin-top: 10px;
       display: flex;
-      width: 25%;
+      width: 500px;
       height: 60%;
       margin-bottom: 50px;
     }
@@ -135,6 +153,9 @@
         }
       }
     }
+    @media (max-width: 900px) {
+      margin: 20px;
+    }
   }
   &Pr {
     &Head {
@@ -145,6 +166,10 @@
     justify-content: center;
     gap: 100px;
     margin: 40px 0 70px 0;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      margin: 20px;
+    }
   }
 }
 
@@ -168,4 +193,41 @@
   justify-content: center;
   gap: 20px;
   margin-bottom: 20px;
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+.TeacherCard {
+  background-color: #0b0144;
+  padding-bottom: 20px;
+  &Head {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+  }
+  &Block {
+    display: flex;
+    width: 70%;
+    margin: 20px auto;
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+  }
+}
+.Work {
+  &Head {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  display: flex;
+  width: 70%;
+  margin: 20px auto;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    margin: 20px;
+  }
 }

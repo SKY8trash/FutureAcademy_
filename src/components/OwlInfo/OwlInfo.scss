@@ -5,6 +5,11 @@
     align-items: center;
     margin-bottom: 20px;
   }
+  &Owl > Img {
+    @media (max-width: 900px) {
+      width: 350px;
+    }
+  }
 
   &Text {
     position: relative;
@@ -12,6 +17,9 @@
   &Info {
     margin-left: 80px;
     width: 350px;
+    @media (max-width: 900px) {
+      margin-left: 0;
+    }
   }
 }
 .text {

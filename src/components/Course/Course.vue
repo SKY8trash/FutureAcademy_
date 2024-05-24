@@ -6,30 +6,14 @@ import SalaryBlock from "../SalaryBlock/SalaryBlock.vue"
 import TeacherCard from "../TeacherCard/TeacherCard.vue"
 import WorkCard from "../WorkCard/WorkCard.vue"
 import Portfolio from "../Portfolio/Portfolio.vue"
-
-class Course {
-  image
-  cardHead
-  cardText
-  cardData
-
-  constructor(image, cardHead, cardText, cardData) {
-    this.image = image
-    this.cardHead = cardHead
-    this.cardText = cardText
-    this.cardData = cardData
-  }
-}
-const courses = [
-  new Course(
-    "../../../public/mobile.png",
-    "Разработка мобильных приложений",
-    "Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются на смартфонах, умных часах и планшетах.",
-    "24 мая",
-  ),
-]
+import { useRoute } from "vue-router"
+import { courses } from "../fakeData"
+const route = useRoute()
+const found = courses.find((element) => element.id == route.params.id)
+// const test = courses.map((el) => el.id)
+// const test1 = courses.filter((test1) => test == route.params.id)
+console.log(found)
 </script>
-
 <template>
   <div>
     <div class="course">
@@ -37,10 +21,10 @@ const courses = [
         <div class="courseHeaderSub">
           <div class="courseHeaderInfo">
             <div class="courseHead">
-              <h1>{{ cardHead }}</h1>
+              <h1>{{ found.cardHead }}</h1>
             </div>
             <div class="courseSubHead">
-              {{ cardText }}
+              {{ found.cardText }}
             </div>
             <div class="courseSubInfo">
               <div class="courseTime">Срок обучения:<br />5лет</div>
@@ -69,42 +53,44 @@ const courses = [
       </div>
     </div>
     <div class="container">
-      <div class="courseInfo">
-        <div class="courseInfoHead">Кто такой {{ cardHead }}</div>
-        <div class="courseInfoText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas omnis
-          facere distinctio libero recusandae ut temporibus! Numquam
-          exercitationem iste, dolor et quod unde doloremque sint voluptatem
-          voluptate perspiciatis. Qui, maiores?
-        </div>
-      </div>
-      <div class="courseLearn">Вы научитесь:</div>
-      <div class="courseLearnAccept">
-        <div class="courseLearnInfo">
-          <div class="courseAccept">
-            <img src="../../../public/accept.png" alt="" />
-          </div>
-          <div class="courseAcceptText">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-            reprehenderit consequuntur neque,
+      <div class="courseInfoBlock">
+        <div class="courseInfo">
+          <div class="courseInfoHead">Кто такой {{ found.cardHead }}</div>
+          <div class="courseInfoText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas omnis
+            facere distinctio libero recusandae ut temporibus! Numquam
+            exercitationem iste, dolor et quod unde doloremque sint voluptatem
+            voluptate perspiciatis. Qui, maiores?
           </div>
         </div>
-        <div class="courseLearnInfo">
-          <div class="courseAccept">
-            <img src="../../../public/accept.png" alt="" />
+        <div class="courseLearn">Вы научитесь:</div>
+        <div class="courseLearnAccept">
+          <div class="courseLearnInfo">
+            <div class="courseAccept">
+              <img src="../../../public/accept.png" alt="" />
+            </div>
+            <div class="courseAcceptText">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+              reprehenderit consequuntur neque,
+            </div>
           </div>
-          <div class="courseAcceptText">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-            reprehenderit consequuntur neque,
+          <div class="courseLearnInfo">
+            <div class="courseAccept">
+              <img src="../../../public/accept.png" alt="" />
+            </div>
+            <div class="courseAcceptText">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+              reprehenderit consequuntur neque,
+            </div>
           </div>
-        </div>
-        <div class="courseLearnInfo">
-          <div class="courseAccept">
-            <img src="../../../public/accept.png" alt="" />
-          </div>
-          <div class="courseAcceptText">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-            reprehenderit consequuntur neque,
+          <div class="courseLearnInfo">
+            <div class="courseAccept">
+              <img src="../../../public/accept.png" alt="" />
+            </div>
+            <div class="courseAcceptText">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+              reprehenderit consequuntur neque,
+            </div>
           </div>
         </div>
       </div>
@@ -184,9 +170,19 @@ const courses = [
       </div>
     </div>
     <div class="TeacherCard">
-      <TeacherCard />
+      <div class="TeacherCardHead">Наши преподаватели</div>
+      <div class="TeacherCardBlock">
+        <TeacherCard />
+        <TeacherCard />
+        <TeacherCard />
+        <TeacherCard />
+      </div>
     </div>
-    <div class="WorkCard">
+    <div class="container">
+      <div class="WorkHead">Трудоустройство или создание бизнеса</div>
+    </div>
+    <div class="Work">
+      <WorkCard />
       <WorkCard />
     </div>
     <div class="Portfolio">
@@ -196,6 +192,11 @@ const courses = [
 </template>
 <script>
 export default {
+  filters: {
+    findId: function (value) {
+      if (value == route.params.id) return value
+    },
+  },
   props: {
     course: {
       type: Object,

@@ -23,7 +23,7 @@ export const routes = [
     component: AllCourses,
   },
   {
-    path: "/course",
+    path: "/course/:id",
     component: Course,
   },
   {

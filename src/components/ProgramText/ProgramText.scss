@@ -46,6 +46,9 @@
   &Block {
     margin: 20px;
     width: 20%;
+    @media (max-width: 900px) {
+      width: 80%;
+    }
   }
   @media (max-width: 900px) {
     flex-direction: column;
