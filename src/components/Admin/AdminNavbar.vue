@@ -1,0 +1,16 @@
+<script setup>
+</script>
+
+<template>
+  <nav class="admin-nav">
+    <ul>
+      <li><a href="AdminUsers">Пользователи</a></li>
+      <li><a href="AdminCourse">Курсы</a></li>
+      <li><a href="AdminApplications">Заявки</a></li>
+    </ul>
+  </nav>
+</template>
+
+<style>
+@import "Admin.scss";
+</style>

@@ -1,0 +1,56 @@
+.admin {
+    margin-bottom: 20px;
+    color: #59443f;
+    & table {
+        text-align: center;
+        margin: 0 auto;
+        border: 1px solid #ede9e8;
+        border-collapse: collapse;
+    }
+    & th {
+        padding: 10px 10px;
+        background: #6d7cd1;
+        border: 1px solid #ede9e8;
+        color: #e1e3f3;
+        font-size: 14px;
+    }
+    & td {
+        padding: 10px 10px;
+        font-size: 16px;
+        font-weight: 500;
+        background: #fbf8f8;
+        border: 1px solid #ede9e8;
+        max-width: 192px;
+        word-wrap: break-word;
+    }
+    & h2 {
+        color: #000;
+        text-align: center;
+    }
+}
+
+.admin-nav {
+    & ul {
+        display: flex;
+        width: 500px;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+        border-radius: 5px;
+        gap: 50px;
+        font-size: 20px;
+        font-weight: 600;
+        background: #6d7cd1;
+        padding: 10px;
+    }
+    & li {
+        padding: 10px;
+    }
+    li:hover {
+        a {
+            color: #fff;
+        }
+        background: #8795e9;
+        border-radius: 3px;
+    }
+}

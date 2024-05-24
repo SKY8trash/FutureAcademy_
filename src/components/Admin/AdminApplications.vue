@@ -3,33 +3,17 @@ import AdminNavbar from "../Admin/AdminNavbar.vue"
 const teachers = [
   {
     id: 1,
-    phone: "+7912012828",
-    email: "Kirillksokvo12312@gmail.com",
-    name: "kirill",
+    name: "Кирилл",
+    phone: "+82383838",
+    email: "lirillkoskov@gmail,con",
     created: "12.12.1212",
     updated: "12.12.1212",
   },
   {
     id: 2,
-    phone: "+7912012828",
-    email: "Kirillksokvo12312@gmail.com",
-    name: "kirill",
-    created: "12.12.1212",
-    updated: "12.12.1212",
-  },
-  {
-    id: 3,
-    phone: "+7912012828",
-    email: "Kirillksokvo12312@gmail.com",
-    name: "kirill",
-    created: "12.12.1212",
-    updated: "12.12.1212",
-  },
-  {
-    id: 4,
-    phone: "+7912012828",
-    email: "Kirillksokvo12312@gmail.com",
-    name: "kirill",
+    name: "Кирилл",
+    phone: "+82383838",
+    email: "lirillkoskov@gmail,con",
     created: "12.12.1212",
     updated: "12.12.1212",
   },
@@ -40,15 +24,16 @@ const teachers = [
   <main class="main">
     <div class="admin">
       <div class="container">
-        <h2>ПОЛЬЗОВАТЕЛИ</h2>
+        <h2>ЗАЯВКИ</h2>
+
         <AdminNavbar />
         <table>
           <thead>
             <tr>
               <th>ID</th>
-              <th>НОМЕР</th>
-              <th>ПОЧТА</th>
               <th>ИМЯ</th>
+              <th>НОМЕР</th>
+              <th>EMAIL</th>
               <th>ДАТА СОЗДАНИЯ ПРОФИЛЯ</th>
               <th>ДАТА ОБНОВЛЕНИЯ ПРОФИЛЯ</th>
             </tr>
@@ -57,9 +42,9 @@ const teachers = [
           <tbody>
             <tr v-for="value in teachers" :key="value.id">
               <td>{{ value.id }}</td>
-              <td>{{ value.phone }}</td>
-              <td>{{ value.email }}</td>
               <td>{{ value.name }}</td>
+              <td>{{ value.phone }}</td>
+              <td>{{ value.email }}$</td>
               <td>{{ value.created }}</td>
               <td>{{ value.updated }}</td>
             </tr>

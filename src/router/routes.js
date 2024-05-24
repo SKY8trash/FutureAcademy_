@@ -4,8 +4,10 @@ import AllCourses from "../pages/AllCourses.vue"
 import Course from "@/pages/Course.vue"
 import Register from "@/pages/Register.vue"
 import Login from "@/pages/Login.vue"
-import Employment from "@/pages/Employment.vue"
+// import Employment from "@/pages/Employment.vue"
 import AdminUsers from "@/pages/AdminUsers.vue"
+import AdminCourse from "@/pages/AdminCourse.vue"
+import AdminApplications from "@/pages/AdminApplications.vue"
 
 export const routes = [
   {
@@ -35,5 +37,13 @@ export const routes = [
   {
     path: "/AdminUsers",
     component: AdminUsers,
+  },
+  {
+    path: "/AdminCourse",
+    component: AdminCourse,
+  },
+  {
+    path: "/AdminApplications",
+    component: AdminApplications,
   },
 ]

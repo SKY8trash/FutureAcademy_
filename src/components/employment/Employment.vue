@@ -5,9 +5,7 @@ import Video from "../video/Video.vue"
 import OwlShape from "../owlShape/OwlShape.vue"
 import List from "../list/List.vue"
 
-import { ref } from "vue"
-
-const teachers = ref([
+const teachers = ([
   {
     images: "../../../public/teachers_4.png",
     name: "Kirill",

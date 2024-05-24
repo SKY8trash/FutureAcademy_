@@ -3,33 +3,19 @@ import AdminNavbar from "../Admin/AdminNavbar.vue"
 const teachers = [
   {
     id: 1,
-    phone: "+7912012828",
-    email: "Kirillksokvo12312@gmail.com",
-    name: "kirill",
+    name: "Дизайн",
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet repellat, optio accusantium dolorum dicta velit ab enim possimus est a nobis mollitia reiciendis numquam, sint eligendi harum doloremque alias nostrum.",
+    price: 200,
     created: "12.12.1212",
     updated: "12.12.1212",
   },
   {
     id: 2,
-    phone: "+7912012828",
-    email: "Kirillksokvo12312@gmail.com",
-    name: "kirill",
-    created: "12.12.1212",
-    updated: "12.12.1212",
-  },
-  {
-    id: 3,
-    phone: "+7912012828",
-    email: "Kirillksokvo12312@gmail.com",
-    name: "kirill",
-    created: "12.12.1212",
-    updated: "12.12.1212",
-  },
-  {
-    id: 4,
-    phone: "+7912012828",
-    email: "Kirillksokvo12312@gmail.com",
-    name: "kirill",
+    name: "Дизайн",
+    description:
+      "Lorem ipsum dolor sit, aan mollitia reiciendis numquam, sint eligendi harum doloremque alias nostrum.",
+    price: 2100,
     created: "12.12.1212",
     updated: "12.12.1212",
   },
@@ -40,15 +26,15 @@ const teachers = [
   <main class="main">
     <div class="admin">
       <div class="container">
-        <h2>ПОЛЬЗОВАТЕЛИ</h2>
+        <h2>КУРСЫ</h2>
         <AdminNavbar />
         <table>
           <thead>
             <tr>
               <th>ID</th>
-              <th>НОМЕР</th>
-              <th>ПОЧТА</th>
-              <th>ИМЯ</th>
+              <th>НАЗВАНИЕ КУРСА</th>
+              <th>ОПИСАНИЕ КУРСА</th>
+              <th>ЦЕНА</th>
               <th>ДАТА СОЗДАНИЯ ПРОФИЛЯ</th>
               <th>ДАТА ОБНОВЛЕНИЯ ПРОФИЛЯ</th>
             </tr>
@@ -57,9 +43,9 @@ const teachers = [
           <tbody>
             <tr v-for="value in teachers" :key="value.id">
               <td>{{ value.id }}</td>
-              <td>{{ value.phone }}</td>
-              <td>{{ value.email }}</td>
               <td>{{ value.name }}</td>
+              <td>{{ value.description }}</td>
+              <td>{{ value.price }}$</td>
               <td>{{ value.created }}</td>
               <td>{{ value.updated }}</td>
             </tr>
