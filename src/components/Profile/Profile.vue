@@ -1,13 +1,15 @@
 <script setup>
 import { ref } from "vue"
-
+// import { courses } from "../fakeData"
 class Course {
+  id
   image
   cardHead
   cardText
   cardData
 
   constructor(image, cardHead, cardText, cardData) {
+    this.id = id
     this.image = image
     this.cardHead = cardHead
     this.cardText = cardText
@@ -15,14 +17,24 @@ class Course {
   }
 }
 const courses = [
-  new Course(
-    "../../../public/mobile.png",
-    "Разработка мобильных приложений",
-    "Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются на смартфонах, умных часах и планшетах.",
-    "24 мая",
-  ),
-  new Course("../../../public/mobile.png", "хыхы", "hahahahaha", "сегодня"),
+  {
+    id: "1",
+    image: "../../../public/mobile.png",
+    cardHead: "Разработка мобильных приложений",
+    cardText:
+      "Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются на смартфонах, умных часах и планшетах.",
+    cardData: "24 мая",
+  },
+  {
+    id: "2",
+    image: "../../../public/mobile.png",
+    cardHead: "Геймдев",
+    cardText:
+      "Разработчик мобильных приложений создаёт приложения, которыми люди ежедневно пользуются на смартфонах, умных часах и планшетах.",
+    cardData: "24 мая",
+  },
 ]
+
 const arr = ref([
   {
     email: "sas@asa",
@@ -30,7 +42,6 @@ const arr = ref([
     name: "Danil",
     lastName: "legenda",
   },
-  
 ])
 function update(content, name) {
   switch (name) {
