@@ -206,6 +206,6 @@ export default {
   },
 }
 </script>
-<style>
+<style scoped>
 @import "Course.scss";
 </style>

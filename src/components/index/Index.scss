@@ -266,17 +266,17 @@
                 border-radius: 6px;
                 color: #000000;
 
-                .shadow {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    border-radius: 10px;
-                    filter: blur(10px);
-                    background: linear-gradient(90deg, rgb(247, 148, 29), rgb(39, 170, 225) 100%);
-                    opacity: 0.3;
-                    padding: 16px 19px;
-                    z-index: -1;
-                }
+                // .shadow {
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     border-radius: 10px;
+                //     filter: blur(10px);
+                //     background: linear-gradient(90deg, rgb(247, 148, 29), rgb(39, 170, 225) 100%);
+                //     opacity: 0.3;
+                //     padding: 16px 19px;
+                //     z-index: -1;
+                // }
             }
         }
     }

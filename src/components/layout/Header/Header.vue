@@ -3,18 +3,18 @@
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <div class="header__logo">
+          <a href="/" class="header__logo">
             <div class="header__logo_img">
               <i class="ic_cross"></i>
               <i class="ic_triangle"></i>
               <i class="ic_circle"></i>
             </div>
             <div class="header__logo_text">FUTURE ACADEMY</div>
-          </div>
+          </a>
           <nav class="header__menu">
             <ul>
               <li>
-                <a href="">
+                <a href="allCourses">
                   <div class="header__menu_img"><i class="ic_block"></i></div>
                   <div class="header__menu_title">Все курсы</div>
                 </a>
@@ -32,7 +32,7 @@
               </li>
               <li><a href="">8 800 950-33-98 </a></li>
               <li>
-                <a href="">
+                <a href="Profile">
                   <div class="header__menu_img"><i class="ic_user"></i></div>
                   <div class="header__menu_title">Войти</div>
                 </a>
