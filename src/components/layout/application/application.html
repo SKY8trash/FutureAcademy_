@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>application</title>
+</head>
+<body>
+  <h1>Курсы</h1>
+  <ul id="application-list"></ul>
+
+  <script>
+    async function fetchApplication() {
+      const response = await fetch('http://localhost:5000/application');
+      const application = await response.json();
+
+      const applicationList = document.getElementById('application-list');
+      application.forEach(application => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${application.name}`;
+        applicationList.appendChild(listItem);
+      });
+    }
+
+    window.onload = fetchApplication;
+  </script>
+</body>
+</html>

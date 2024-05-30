@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>application</title>
+</head>
+<body>
+  <h1>Преподователи</h1>
+  <ul id="teachers-list"></ul>
+
+  <script>
+    async function fetchTeachers() {
+      const response = await fetch('http://localhost:5000/teachers');
+      const teachers = await response.json();
+
+      const teachersList = document.getElementById('teachers-list');
+      teachers.forEach(teachers => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `${teachers.FIO}`;
+        teachersList.appendChild(listItem);
+      });
+    }
+
+    window.onload = fetchTeachers;
+  </script>
+</body>
+</html>
