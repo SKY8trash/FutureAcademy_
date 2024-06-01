@@ -1,0 +1,4 @@
+export function middlewareFunction(request, response, next) {
+  // проверка токена
+  next();
+}
