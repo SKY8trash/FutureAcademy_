@@ -25,6 +25,6 @@
     <div class="programButton"><button>Записаться на курс</button></div>
   </div>
 </template>
-<style>
+<style scoped>
 @import "ProgramText.scss";
 </style>

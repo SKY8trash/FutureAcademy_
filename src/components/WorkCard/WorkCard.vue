@@ -11,6 +11,6 @@
     <div class="WorkCardPrice">80 000—200 000 ₽ в месяц</div>
   </div>
 </template>
-<style>
+<style scoped>
 @import "WorkCard.scss";
 </style>

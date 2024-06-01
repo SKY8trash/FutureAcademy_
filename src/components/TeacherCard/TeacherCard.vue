@@ -10,6 +10,6 @@
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 @import "TeacherCard.scss";
 </style>

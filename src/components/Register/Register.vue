@@ -64,6 +64,6 @@
     </div>
   </main>
 </template>
-<style>
+<style scoped>
 @import "Register.scss";
 </style>

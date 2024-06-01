@@ -12,8 +12,9 @@
             left: 50%;
             transform: translate(-94%, -88%);
             z-index: 2;
-            font-size: 36px;
-            line-height: 67px;
+            font-size: 3vw;
+            // font-size: 36px;
+            line-height: 6vw;
         }
         &__description {
             position: absolute;
@@ -21,8 +22,8 @@
             left: 50%;
             transform: translate(-97%, 39%);
             font-weight: 500;
-            font-size: 20px;
-            line-height: 67px;
+            font-size: 1.75vw;
+            line-height: 6vw;
             z-index: 2;
         }
         &__dot {
@@ -30,6 +31,8 @@
             top: 58%;
             left: -29%;
             z-index: 1;
+            width: 1032px;
+            max-width: 88vw;
             img:not(:last-child) {
                 margin-bottom: 12px;
             }
@@ -38,6 +41,8 @@
             }
             img {
                 margin-left: 10px;
+                width: 1032px;
+                max-width: 88vw;
             }
         }
         &__dot_block {
@@ -46,7 +51,9 @@
             left: 0.6%;
             z-index: -1;
             width: 1032px;
+            max-width: 88vw;
             height: 480px;
+            max-height: 41vw;
             background: #00093c;
         }
         &__images img {
@@ -54,6 +61,8 @@
             top: 0;
             left: 50%;
             transform: translate(-48%, 0);
+            height: 480px;
+            max-height: 41vw;
         }
         &__other {
             position: relative;
@@ -63,6 +72,13 @@
                 position: absolute;
                 left: -11%;
                 margin-top: -33%;
+                @media screen and (max-width: 900px) {
+                    left: 1%;
+                    margin-top: -40%;
+                    img {
+                        width: 80px;
+                    }
+                }
             }
             &_cross-2 {
                 position: absolute;
@@ -77,16 +93,25 @@
                 position: absolute;
                 left: -14.5%;
                 margin-top: -9%;
+                @media screen and (max-width: 900px) {
+                    display: none;
+                }
             }
             &_curve-2 {
                 position: absolute;
                 right: 33.4%;
                 margin-top: -22.5%;
+                @media screen and (max-width: 900px) {
+                    display: none;
+                }
             }
             &_curve-3 {
                 position: absolute;
                 right: 25%;
-                margin-top: -30.1%;
+                margin-top: -31%;
+                @media screen and (max-width: 900px) {
+                    display: none;
+                }
             }
             &_curve-4 {
                 position: absolute;
@@ -97,11 +122,25 @@
                 position: absolute;
                 right: 37%;
                 margin-top: -37%;
+                @media screen and (max-width: 900px) {
+                    right: 24%;
+                    margin-top: -41%;
+                    img {
+                        width: 100px;
+                    }
+                }
             }
             &_triangle {
                 position: absolute;
                 left: 26%;
                 margin-top: -11%;
+                @media screen and (max-width: 900px) {
+                    left: 25%;
+                    margin-top: -12%;
+                    img {
+                        width: 90px;
+                    }
+                }
             }
         }
         @media screen and (max-width: 560px) {

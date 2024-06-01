@@ -59,6 +59,6 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 @import "Portfolio.scss";
 </style>

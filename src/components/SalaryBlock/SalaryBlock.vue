@@ -15,6 +15,6 @@ const color = [{ color: "#C5DDFF" }, { color: "#B8EFCF" }, { color: "#FFCE94" }]
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 @import "SalaryBlock.scss";
 </style>
