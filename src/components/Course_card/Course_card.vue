@@ -31,6 +31,6 @@ export default {
   },
 }
 </script>
-<style>
+<style scoped>
 @import "Course_card.scss";
 </style>

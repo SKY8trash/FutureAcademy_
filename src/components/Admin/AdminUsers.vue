@@ -70,6 +70,6 @@ const teachers = [
   </main>
 </template>
 
-<style>
+<style scoped>
 @import "Admin.scss";
 </style>

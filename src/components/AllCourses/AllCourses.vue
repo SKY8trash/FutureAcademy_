@@ -32,7 +32,7 @@ export default {
   },
 }
 </script>
-<style>
+<style scoped>
 .courses {
   margin: 0 5px;
 }

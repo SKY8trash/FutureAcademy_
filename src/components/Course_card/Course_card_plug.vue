@@ -14,6 +14,6 @@
     </div>
   </a>
 </template>
-<style>
+<style scoped>
 @import "Course_card.scss";
 </style>

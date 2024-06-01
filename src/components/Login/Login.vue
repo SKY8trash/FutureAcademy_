@@ -53,6 +53,6 @@
   </main>
 </template>
 
-<style>
+<style scoped>
 @import "Login.scss";
 </style>

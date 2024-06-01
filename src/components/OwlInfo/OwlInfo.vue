@@ -42,6 +42,6 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 @import "OwlInfo.scss";
 </style>
