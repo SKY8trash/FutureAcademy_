@@ -3,5 +3,7 @@ import AdminUsers from "../components/Admin/AdminUsers.vue"
 </script>
 
 <template>
-  <AdminUsers />
+  <Suspense>
+    <AdminUsers />
+  </Suspense>
 </template>

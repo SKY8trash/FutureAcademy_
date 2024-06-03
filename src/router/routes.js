@@ -7,7 +7,7 @@ import Login from "@/pages/Login.vue"
 // import Employment from "@/pages/Employment.vue"
 import AdminUsers from "@/pages/AdminUsers.vue"
 import AdminCourse from "@/pages/AdminCourse.vue"
-import AdminApplications from "@/pages/AdminApplications.vue"
+import AdminTeachers from "@/pages/AdminTeachers.vue"
 
 export const routes = [
   {
@@ -43,7 +43,7 @@ export const routes = [
     component: AdminCourse,
   },
   {
-    path: "/AdminApplications",
-    component: AdminApplications,
+    path: "/AdminTeachers",
+    component: AdminTeachers,
   },
 ]

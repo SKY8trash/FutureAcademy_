@@ -19,9 +19,9 @@
                 <div class="header__menu_title">Все курсы</div>
               </a>
             </li>
-            <li><a href="">Мероприятия</a></li>
-            <li><a href="">Базы знаний </a></li>
-            <li><a href="">Карьера</a></li>
+            <!-- <li><a href="">Мероприятия</a></li> -->
+            <!-- <li><a href="">Базы знаний </a></li> -->
+            <!-- <li><a href="">Карьера</a></li> -->
             <li class="header__menu_title-city">
               <a href="">
                 <div class="header__menu_img">

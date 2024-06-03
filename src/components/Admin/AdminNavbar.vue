@@ -6,7 +6,7 @@
     <ul>
       <li><a href="AdminUsers">Пользователи</a></li>
       <li><a href="AdminCourse">Курсы</a></li>
-      <li><a href="AdminApplications">Заявки</a></li>
+      <li><a href="AdminTeachers">Преподваватели</a></li>
     </ul>
   </nav>
 </template>

@@ -3,7 +3,7 @@ import AdminNavbar from "../Admin/AdminNavbar.vue"
 import axios from "axios"
 import { ref } from "vue"
 const teachers = ref(
-  (await axios.get(`http://26.232.67.81:3308/api/users`)).data
+  (await axios.get(`http://26.232.67.81:3308/api/teachers`)).data
 )
 </script>
 
@@ -19,7 +19,7 @@ const teachers = ref(
               <th>ID</th>
               <th>ИМЯ</th>
               <th>ФАМИЛИЯ</th>
-              <th>НОМЕР</th>
+              <th>ПРЕПОДАЕТ</th>
 
             </tr>
           </thead>
@@ -29,7 +29,7 @@ const teachers = ref(
               <td>{{ value.id }}</td>
               <td>{{ value.name }}</td>
               <td>{{ value.last_name }}</td>
-              <td>{{ value.number }}</td>
+              <td>{{ value.learn }}</td>
             </tr>
           </tbody>
         </table>
