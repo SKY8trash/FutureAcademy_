@@ -1,7 +1,10 @@
 <script setup>
+import { Suspense } from "vue"
 import AllCourses from "../components/AllCourses/AllCourses.vue"
 </script>
 
 <template>
-  <AllCourses />
+  <Suspense>
+    <AllCourses />
+  </Suspense>
 </template>

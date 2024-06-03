@@ -1,36 +1,26 @@
-<script setup>
-// import { useRoute } from "vue-router"
-
-// const route = useRoute()
-import { courses } from "../fakeData"
-</script>
-
 <template>
   <router-link :to="`/course/${course.id}`" id="course">
     <div class="card">
-      <div class="cardH">Программа</div>
+      <div class="cardH">{{ course.name_programm }}</div>
       <div class="cardHeader">
-        <div><img :src="course.image" alt="" /></div>
-        <div class="cardHead">{{ course.cardHead }}</div>
+        <div><img :src="course.avatar" alt="" /></div>
+        <div class="cardHead">{{ course.name_application }}</div>
       </div>
       <div class="cardText">
-        {{ course.cardText }}
+        {{ course.description }}
       </div>
-      <div class="cardData">{{ course.cardData }}</div>
+      <div class="cardData">{{ course.time }}</div>
     </div>
   </router-link>
 </template>
-<script>
-export default {
-  props: {
-    course: {
-      type: Object,
-      required: true,
-      discount: false,
-    },
+<script setup>
+const { course } = defineProps({
+  course: {
+    type: Object,
+    required: true,
   },
-}
+})
 </script>
-<style scoped>
+<style>
 @import "Course_card.scss";
 </style>
