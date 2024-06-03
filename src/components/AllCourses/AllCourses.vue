@@ -4,7 +4,7 @@ import { ref } from "vue"
 import Course_card from "../Course_card/Course_card.vue"
 
 const courses = ref(
-  (await axios.get(`http://localhost:3308/api/application`)).data,
+  (await axios.get(`http://26.232.67.81:3308/api/application`)).data,
 )
 </script>
 

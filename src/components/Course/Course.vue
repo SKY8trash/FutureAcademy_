@@ -11,7 +11,7 @@ import axios from "axios"
 import { ref } from "vue"
 const route = useRoute()
 const found = ref(
-  (await axios.get(`http://localhost:3308/api/application/` + route.params.id))
+  (await axios.get(`http://26.232.67.81:3308/api/application/` + route.params.id))
     .data,
 )
 // const test = courses.map((el) => el.id)

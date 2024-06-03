@@ -3,5 +3,7 @@ import AdminCourse from "../components/Admin/AdminCourse.vue"
 </script>
 
 <template>
-  <AdminCourse />
+  <Suspense>
+    <AdminCourse />
+  </Suspense>
 </template>
