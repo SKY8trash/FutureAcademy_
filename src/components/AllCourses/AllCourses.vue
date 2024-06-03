@@ -1,12 +1,17 @@
 <script setup>
-import { courses } from "../fakeData"
-console.log(courses)
+import axios from "axios"
+import { ref } from "vue"
+import Course_card from "../Course_card/Course_card.vue"
+
+const courses = ref(
+  (await axios.get(`http://localhost:3308/api/application`)).data,
+)
 </script>
 
 <template>
   <div class="container">
     <div class="coursesCards">
-      <CourseImport
+      <Course_card
         class="courses"
         v-for="(el, index) in courses"
         :key="index"
@@ -15,24 +20,8 @@ console.log(courses)
     </div>
   </div>
 </template>
-<script>
-import CourseImport from "../Course_card/Course_card.vue"
 
-export default {
-  components: { CourseImport },
-  data() {
-    return {
-      courses: [],
-      image: "",
-      cardHead: "",
-      cardText: "",
-      cardData: "",
-      discount: false,
-    }
-  },
-}
-</script>
-<style scoped>
+<style>
 .courses {
   margin: 0 5px;
 }
