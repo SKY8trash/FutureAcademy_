@@ -3,5 +3,7 @@ import Course from "../components/Course/Course.vue"
 </script>
 
 <template>
-  <Course />
+  <Suspense>
+    <Course />
+  </Suspense>
 </template>

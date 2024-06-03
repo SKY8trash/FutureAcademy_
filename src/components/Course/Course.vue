@@ -7,9 +7,13 @@ import TeacherCard from "../TeacherCard/TeacherCard.vue"
 import WorkCard from "../WorkCard/WorkCard.vue"
 import Portfolio from "../Portfolio/Portfolio.vue"
 import { useRoute } from "vue-router"
-import { courses } from "../fakeData"
+import axios from "axios"
+import { ref } from "vue"
 const route = useRoute()
-const found = courses.find((element) => element.id == route.params.id)
+const found = ref(
+  (await axios.get(`http://localhost:3308/api/application/` + route.params.id))
+    .data,
+)
 // const test = courses.map((el) => el.id)
 // const test1 = courses.filter((test1) => test == route.params.id)
 console.log(found)
@@ -21,18 +25,18 @@ console.log(found)
         <div class="courseHeaderSub">
           <div class="courseHeaderInfo">
             <div class="courseHead">
-              <h1>{{ found.cardHead }}</h1>
+              <h1>{{ found.name_application }}</h1>
             </div>
             <div class="courseSubHead">
-              {{ found.cardText }}
+              {{ found.description }}
             </div>
             <div class="courseSubInfo">
-              <div class="courseTime">Срок обучения:<br />5лет</div>
+              <div class="courseTime">Срок обучения:<br />{{ found.time }}</div>
               <div class="courseMode">
                 Режим занятий:<br />2 раза в неделю по 2 академических часа
               </div>
             </div>
-            <div class="coursePrice">от 4350₽ в месяц</div>
+            <div class="coursePrice">от {{ found.price }}₽ в месяц</div>
             <div class="courseJoin">
               1 бесплатное занятие
               <div class="courseButton">

@@ -3,7 +3,7 @@
     <div class="card">
       <div class="cardH">{{ course.name_programm }}</div>
       <div class="cardHeader">
-        <div><img :src="course.avatar" alt="" /></div>
+        <div><img src="../../../public/ +{{course.avatar}}" alt="" /></div>
         <div class="cardHead">{{ course.name_application }}</div>
       </div>
       <div class="cardText">
