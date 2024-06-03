@@ -286,10 +286,17 @@
             display: flex;
             align-items: center;
             gap: 40px;
+            @media screen and (max-width: 900px) {
+                display: block;
+            }
         }
         &__message {
             &_description {
                 position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // text-align: center;
                 div {
                     position: absolute;
                     width: 186px;
@@ -298,33 +305,99 @@
                     transform: translate(-57%, -61%);
                     font-weight: 600;
                     font-size: 16px;
+                    @media screen and (max-width: 560px) {
+                        transform: translate(-80%, -62%);
+                    }
+                }
+                @media screen and (max-width: 560px) {
+                    img {
+                        width: 350px;
+                        height: 220px;
+                    }
                 }
             }
             &_owl {
                 position: absolute;
                 top: 76%;
                 left: -4%;
+                @media screen and (max-width: 900px) {
+                    top: 20%;
+                    left: 17%;
+                }
+                @media screen and (max-width: 768px) {
+                    top: 24%;
+                    left: 11%;
+                }
+                @media screen and (max-width: 560px) {
+                    top: 26%;
+                    left: 3%;
+                    img {
+                        width: 120px;
+                    }
+                }
+                @media screen and (max-width: 360px) {
+                    top: 23%;
+                    left: 0%;
+
+                }
             }
         }
         &__items {
+            @media screen and (max-width: 900px) {
+                margin-top: 120px;
+            }
             &__people {
                 .courses__items__people_1 {
                     display: flex;
+                    @media screen and (max-width: 900px) {
+                        align-items: center;
+                        justify-content: center;
+                    }
                     margin-left: 10px;
-                    gap: 160px;
+                    // gap: 160px;
+                    gap: min(max(80px, 13vw), 150px);
+                    @media screen and (max-width: 1024px) {
+                        gap: min(max(60px, 9vw), 100px);
+                    }
+                    @media screen and (max-width: 560px) {
+                        margin-left: 0;
+                    }
+                    @media screen and (max-width: 560px) {
+                        gap: 36px;
+                    }
                 }
                 &__age {
                     display: flex;
                     align-items: center;
                     justify-content: start;
+                    @media screen and (max-width: 560px) {
+                        display: block;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                    }
 
                     &_images {
                         width: 49px;
+                        @media screen and (max-width: 560px) {
+                            margin-left: 16px;
+                        }
+                        @media screen and (max-width: 560px) {
+                            img {
+                                width: 46px;
+                            }
+                        }
                     }
                     &_title {
                         margin-left: 18px;
                         font-size: 16px;
                         font-weight: 700;
+                        @media screen and (max-width: 560px) {
+                            margin-left: 0;
+                        }
+                        @media screen and (max-width: 560px) {
+                            font-size: 14px;
+                        }
                     }
                     &_years {
                         margin-left: 18px;
@@ -334,7 +407,16 @@
                     &_band {
                         margin-top: 15px;
                         border: 1px solid rgb(224, 224, 224);
-                        width: 880px;
+                        max-width: 880px;
+                        width: 68vw;
+                        @media screen and (max-width: 900px) {
+                            margin: 0 auto;
+                            width: 84vw;
+                        }
+                        @media screen and (max-width: 560px) {
+                            margin-top: 10px;
+                            width: 76vw;
+                        }
                         &-shaded {
                             position: absolute;
                             width: 160px;
@@ -343,6 +425,9 @@
                             background-color: black;
                             background: linear-gradient(to right, #f7941d, #27aae1);
                             margin-left: -1px;
+                            @media screen and (max-width: 560px) {
+                                width: 96px;
+                            }
                         }
                     }
                 }
@@ -350,34 +435,36 @@
             .block {
                 margin-top: 40px;
                 display: flex;
-                max-width: 840px;
                 flex-wrap: wrap;
                 position: relative;
                 gap: 20px;
-                a {
-                    position: relative;
+                @media screen and (max-width: 900px) {
+                    align-items: center;
+                    justify-content: center;
+                }
+                @media screen and (max-width: 560px) {
                 }
             }
-            &_item {
-                // position: absolute;
-                position: relative;
-                padding: 16px 19px;
-                background-color: #fff;
-                border-radius: 6px;
-                color: #000000;
+            // &_item {
+            //     // position: absolute;
+            //     position: relative;
+            //     padding: 16px 19px;
+            //     background-color: #fff;
+            //     border-radius: 6px;
+            //     color: #000000;
 
-                // .shadow {
-                //     position: absolute;
-                //     top: 0;
-                //     left: 0;
-                //     border-radius: 10px;
-                //     filter: blur(10px);
-                //     background: linear-gradient(90deg, rgb(247, 148, 29), rgb(39, 170, 225) 100%);
-                //     opacity: 0.3;
-                //     padding: 16px 19px;
-                //     z-index: -1;
-                // }
-            }
+            // .shadow {
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     border-radius: 10px;
+            //     filter: blur(10px);
+            //     background: linear-gradient(90deg, rgb(247, 148, 29), rgb(39, 170, 225) 100%);
+            //     opacity: 0.3;
+            //     padding: 16px 19px;
+            //     z-index: -1;
+            // }
+            // }
         }
     }
     .relevance {
